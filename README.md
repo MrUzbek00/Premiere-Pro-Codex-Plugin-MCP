@@ -91,23 +91,6 @@ For editing, first save a copy of your project, then describe the intended chang
 
 Scripts must return JSON-serializable data. `execute_script` accepts `timeout_seconds` from 1 to 45 (default 30). A timeout after delivery does **not** cancel an Adobe operation: inspect `get_result` and project state before another edit. Only one command is outstanding at a time. Results are in memory (last 20); restarting the server loses them.
 
-## Publish to GitHub
-
-Push the **source repository**, not the generated installer or local configuration. Every person runs setup after cloning to create their own token. No repository URL is hardcoded, so the project works with any GitHub repository name.
-
-From the project folder, if it is not already a Git repository:
-
-```powershell
-git init -b main
-git add .
-git status
-git commit -m "Package Codex Premiere Bridge"
-git remote add origin https://github.com/YOUR-ACCOUNT/YOUR-REPOSITORY.git
-git push -u origin main
-```
-
-Replace the URL with an empty repository you own. Before committing, confirm `local/`, `dist/`, `connection.json`, and `.ccx` files are absent from `git status`. Never force-add them or attach your generated `.ccx` to a public GitHub release: it embeds your token. Share source archives instead. See [distribution notes](docs/DISTRIBUTION.md).
-
 ## Development and maintenance
 
 ```powershell
