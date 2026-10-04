@@ -1,0 +1,13 @@
+{
+  "manifestVersion": 5,
+  "id": "local.codex.premiere.bridge",
+  "name": "Codex Premiere Bridge",
+  "version": "1.1.0",
+  "main": "index.html",
+  "host": { "app": "premierepro", "minVersion": "26.0.0" },
+  "entrypoints": [{ "type": "panel", "id": "bridge", "label": { "default": "Codex Premiere Bridge" }, "minimumSize": { "width": 260, "height": 180 }, "preferredDockedSize": { "width": 320, "height": 240 } }],
+  "requiredPermissions": {
+    "network": { "domains": ["http://localhost", "http://localhost:32126"] },
+    "allowCodeGenerationFromStrings": true
+  }
+}

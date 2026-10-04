@@ -1,0 +1,15 @@
+{
+  "name": "codex-premiere-bridge",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Local Codex MCP bridge for Adobe Premiere Pro 26+",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "setup": "node scripts/setup.cjs",
+    "package": "node scripts/package.cjs",
+    "doctor": "node scripts/doctor.cjs",
+    "start": "node server.cjs",
+    "check": "node --check server.cjs && node --check panel/main.js && node --check scripts/setup.cjs && node --check scripts/package.cjs && node --check scripts/doctor.cjs",
+    "test": "node --test"
+  }
+}

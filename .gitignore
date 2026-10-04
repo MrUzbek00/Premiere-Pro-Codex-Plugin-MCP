@@ -1,0 +1,24 @@
+# Machine-specific credentials, generated panels, and private installers
+/local/
+/dist/
+**/connection.json
+*.ccx
+*.zxp
+*.zip
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+.venv/
+.test-*/
+
+# Local AI assistant configuration
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.codex/
+AGENTS.md

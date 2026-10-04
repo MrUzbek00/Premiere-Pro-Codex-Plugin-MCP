@@ -1,0 +1,4 @@
+# No Python packages are required. Python is not a runtime requirement.
+# Runtime: Node.js 22+, Adobe Premiere Pro 26+, Creative Cloud Desktop,
+# and a signed-in Codex client supporting local stdio MCP servers.
+# JavaScript dependencies and commands are documented in package.json.
